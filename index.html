@@ -18,7 +18,31 @@
         </div>
 
         <form action="#" method="get">
+            <section>
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name" maxlength="30">
 
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name" maxlength="30">
+            </section>
+
+            <section>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="phone-number">Phone number</label>
+                <input type="tel" name="phone-number" id="phone-number">
+            </section>
+
+            <section>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="8">
+
+                <label for="confirm-password">Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password" minlength="8">
+            </section>
+
+            <button type="submit">Register</button>
         </form>
 
         <div class="after-form">
