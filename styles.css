@@ -1,3 +1,8 @@
+@font-face {
+    font-family: tf2-build;
+    src: url(./fonts/tf2build.ttf);
+}
+
 :root{
     font-size: 16px;
 }
@@ -23,7 +28,8 @@ body{
 
 .splash-text{
     white-space: pre-line;
-    font-size: 3rem;
+    font-family: tf2-build, Roboto, Calibri, sans-serif;
+    font-size: 3.5rem;
     color: white;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
@@ -46,11 +52,13 @@ body{
     align-items: center;
     margin: 30px 20px;
     gap: 20px;
+    min-height: 93vh;
 }
 
 .introduction{
-    padding: 0px 30px;
+    font-family: "Arial Bold", Calibri, Helvetica, Roboto, sans-serif;
     font-size: 1.25rem;
+    padding: 20px calc(15% + 20px);
 }
 
 form section{
@@ -76,6 +84,14 @@ form button{
     padding: 4px 8px;
     border-radius: 8px;
     margin-top: 20px;
+}
+
+form input:invalid{
+    border-color: red;
+}
+
+form input:focus{
+    border-color: limegreen;
 }
 
 .after-form{
