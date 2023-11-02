@@ -15,6 +15,7 @@
 
     <div class="form-wrapper">
         <div class="introduction">
+            <div class="header-text">HEADER TEXT HEADER TEXT</div>
             <p>
                 This is a fake sign up site! But not as fake as those real ones!
                 Fill in the sign up form and we totally won't spam your mailbox with mountains of marketing stuff and make the unsubscribe process a nightmare!
@@ -23,9 +24,10 @@
         </div>
 
         <form action="#" method="post">
+            <div>Fields marked with <span class="required">*</span> are required.</div>
             <section>
                 <div class="input-wrapper">
-                    <label for="first-name">First name</label>
+                    <label for="first-name">First name<span class="required">*</span></label>
                     <input type="text" name="first-name" id="first-name" maxlength="30" required>
                 </div>
 
@@ -37,7 +39,7 @@
 
             <section>
                 <div class="input-wrapper">
-                    <label for="email">Email</label>
+                    <label for="email">Email<span class="required">*</span></label>
                     <input type="email" name="email" id="email" required>
                 </div>
 
@@ -49,12 +51,12 @@
 
             <section>
                 <div class="input-wrapper">
-                    <label for="password">Password</label>
+                    <label for="password">Password<span class="required">*</span></label>
                     <input type="password" name="password" id="password" minlength="8" required>
                 </div>
 
                 <div class="input-wrapper">
-                    <label for="confirm-password">Confirm password</label>
+                    <label for="confirm-password">Confirm password<span class="required">*</span></label>
                     <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
                 </div>
             </section>
@@ -62,7 +64,7 @@
             <section class="checkbox-section">
                 <div class="checkbox-wrapper">
                     <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms">I agree to the terms and conditions. (Required)</label>
+                    <label for="terms">I agree to the terms and conditions.<span class="required">*</span></label>
                 </div>
                 <div class="checkbox-wrapper">
                     <input type="checkbox" id="marketing1" name="marketing1">

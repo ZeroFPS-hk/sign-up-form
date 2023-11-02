@@ -61,10 +61,19 @@ body{
     padding: 20px calc(15% + 20px);
 }
 
+.header-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+span.required{
+    color: red;
 }
 
 form section{
@@ -100,10 +109,12 @@ form button{
 
 form input:invalid{
     border-color: red;
+    border-radius: 5px;
 }
 
 form input:focus{
     border-color: limegreen;
+    border-radius: 5px;
 }
 
 .after-form{
