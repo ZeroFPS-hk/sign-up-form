@@ -22,11 +22,11 @@
             <p>What are you waiting for? Sign up now! You know you want it! You don't? We'll re-educate you so you'll know!</p>
         </div>
 
-        <form action="#" method="get">
+        <form action="#" method="post">
             <section>
                 <div class="input-wrapper">
                     <label for="first-name">First name</label>
-                    <input type="text" name="first-name" id="first-name" maxlength="30">
+                    <input type="text" name="first-name" id="first-name" maxlength="30" required>
                 </div>
 
                 <div class="input-wrapper">
@@ -38,7 +38,7 @@
             <section>
                 <div class="input-wrapper">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
 
                 <div class="input-wrapper">
@@ -50,12 +50,35 @@
             <section>
                 <div class="input-wrapper">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" minlength="8">
+                    <input type="password" name="password" id="password" minlength="8" required>
                 </div>
 
                 <div class="input-wrapper">
                     <label for="confirm-password">Confirm password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" minlength="8">
+                    <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
+                </div>
+            </section>
+
+            <section class="checkbox-section">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions. (Required)</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="marketing1" name="marketing1">
+                    <label for="marketing1">I wish to recieve marketing and promotion emails.</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="marketing2" name="marketing2">
+                    <label for="marketing2">I wish to not recieve marketing and promotion calls.</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="marketing3" name="marketing3">
+                    <label for="marketing3">I want or want not to recieve marketing and promotion texts and other forms of spam.</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="marketing4" name="marketing4">
+                    <label for="marketing4">If I do not give by email, IP address, real address and ID for marketing stuff I will give my firstborn son as a sacrifice. (Tick this if you disagree)</label>
                 </div>
             </section>
 
